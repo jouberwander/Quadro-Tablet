@@ -27,7 +27,7 @@
 
   /* ---------- Slideshow ---------- */
   .slide{
-    position:absolute;inset:0;
+    position:absolute;top:0;left:0;right:0;bottom:0;
     opacity:0;
     overflow:hidden;
     transition:opacity 2.2s ease;
@@ -35,7 +35,7 @@
   }
   .slide.on{opacity:1;}
   .slide .blurbg{
-    position:absolute;inset:-6%;
+    position:absolute;top:-6%;left:-6%;right:-6%;bottom:-6%;
     background-size:cover;background-position:center;background-repeat:no-repeat;
     filter:blur(26px) brightness(.5);
     transform:scale(1.15);
@@ -44,13 +44,13 @@
   }
   .slide .blurbg.show{opacity:1;}
   .slide .fg{
-    position:absolute;inset:0;
+    position:absolute;top:0;left:0;right:0;bottom:0;
     background-size:cover;background-position:center;background-repeat:no-repeat;
   }
   .slide .fg.contain{background-size:contain;}
 
   .dim-layer{
-    position:absolute;inset:0;
+    position:absolute;top:0;left:0;right:0;bottom:0;
     background:#000;
     opacity:0;
     pointer-events:none;
@@ -94,7 +94,7 @@
 
   /* ---------- Empty state ---------- */
   .empty{
-    position:absolute;inset:0;display:none;
+    position:absolute;top:0;left:0;right:0;bottom:0;display:none;
     flex-direction:column;align-items:center;justify-content:center;
     gap:18px;color:var(--cream);text-align:center;padding:0 8vw;
   }
